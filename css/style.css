@@ -1,0 +1,166 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family:"lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #ccc;
+    padding: .3rem;
+}
+header{
+    background-image:linear-gradient(to right bottom,rgba(126, 213, 111, 0.71), rgba(40, 180, 133, 0.7)),url(../img/hero.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: top;
+/*     clip-path: polygon(0 0, 100% 0, 0 100%);*/
+/*     clip-path: polygon(50% 0, 100% 100%, 0 100%);triangle*/
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+}
+.logo-box {
+    position: absolute;
+    top: .4rem;
+    left: .4rem;
+}
+.logo{
+    height: 4.5rem;
+    width: auto;
+}
+.heading-primary-main {
+    font-size:.8rem;
+    font-weight: 400;
+    letter-spacing:3.5rem;
+    display: block;
+    animation-name: moveLeftIn;
+    animation-duration:3s;
+    animation-timing-function: ease-out;
+}
+
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+     transition: all .2s;
+}
+
+.heading-primary-sub {
+    font-size: .2rem;
+    font-weight: 400;
+    letter-spacing:2.3rem;
+    display: block;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+.text-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+@keyframes moveLeftIn {
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+        
+    }
+    80%{
+        transform: translateX(2rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+        
+    }
+    80%{
+        transform: translateX(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 20rem;
+    margin-top: 4rem;
+    transition: all .2s;
+    position: relative;
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 20rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn:hover{
+    transform: translateY(-.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.5);
+    opacity: 0;
+}
+.btn:active{
+    transform: translateY(-.1rem);
+     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+    color: #b5b1b1;
+    background-color: #fff;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+.btn-animated{
+     animation: moveInBottom 2s ease-out;
+     animation-fill-mode: backwards; 
+/*    aplication animation at 0%*/
+}
