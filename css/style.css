@@ -20,7 +20,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding:2rem;
+  padding: 2rem;
 }
 .header {
   height: 95vh;
@@ -36,33 +36,62 @@ body {
   /* clip-path: polygon(50% 0, 100% 100%, 0 100%); */
   position: relative;
 }
-.logo-box{
-    position: absolute;
-    top: 4rem;
-    left: 3rem;
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 3rem;
 }
-.logo{
-height: 3.5rem;
+.logo {
+  height: 3.5rem;
 }
-.text-box{
-    /* background-color: red; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.text-box {
+  /* background-color: red; */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.heading-primary{
-    color: #fff;
-    text-transform: uppercase;
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
 }
-.heading-primary-main{
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name:moveInLeft;
+  animation-duration: 3s;
 }
-.heading-primary-sub{
-    font-size: 2.5rem;
-    letter-spacing: 1.5rem;
-    display: block;
+.heading-primary-sub {
+  font-size: 2.5rem;
+  letter-spacing: 1.5rem;
+  display: block;
+  animation-name: moveInRight;
+  animation-duration: 3s;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes moveInRight{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
