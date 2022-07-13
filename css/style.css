@@ -101,6 +101,19 @@ body {
     transform: translateX(0px);
   }
 }
+@keyframes moveInTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -110,6 +123,11 @@ body {
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
+
+}
+.btn-animated{
+    animation: moveInTop 2s ease-out .75s;
+    animation-fill-mode: backwards;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -123,22 +141,22 @@ body {
   background-color: #fff;
   color: #777;
 }
-.btn::after{
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 10rem;
-    transition: all .4s;
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10rem;
+  transition: all 0.4s;
 }
-.btn-white::after{
-    background-color: #fff;
+.btn-white::after {
+  background-color: #fff;
 }
-.btn:hover::after{
-    transform: scale(1.5);
-    opacity: 0;
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
