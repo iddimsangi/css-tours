@@ -43,6 +43,22 @@ body {
   color: #777;
   padding: 2rem; }
 
+.heading-secondary {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.5rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  display: inline-block;
+  color: transparent;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewX(3deg) skewY(2deg) scale(1.2);
+    text-shadow: 0.5rem 2rem 3rem rgba(0, 0, 0, 0.2); }
+
+.u-center {
+  text-align: center; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -126,3 +142,8 @@ body {
         animation-name: moveInRight;
         animation-duration: 3s;
         animation-timing-function: ease-out; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
