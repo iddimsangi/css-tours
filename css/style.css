@@ -30,42 +30,40 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   /* clip-path: polygon(50% 0, 100% 100%, 0 100%); */
   position: relative; }
-
-.logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 3rem; }
-  .logo-box .logo {
-    height: 3.5rem; }
-
-.text-box {
-  /* background-color: red; */
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-  .text-box .heading-primary {
-    color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 5rem; }
-    .text-box .heading-primary-main {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-      /* animation-name:moveInLeft;
-          animation-timing-function: ease-out;
-          animation-duration: 3s; */
-      animation: moveInLeft 3s ease-out; }
-    .text-box .heading-primary-sub {
-      font-size: 2.5rem;
-      letter-spacing: 1.5rem;
-      display: block;
-      animation-name: moveInRight;
-      animation-duration: 3s;
-      animation-timing-function: ease-out; }
+  .header_logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 3rem; }
+    .header_logo-box .logo {
+      height: 3.5rem; }
+  .header_text-box {
+    /* background-color: red; */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .header_text-box .heading-primary {
+      color: #fff;
+      text-transform: uppercase;
+      backface-visibility: hidden;
+      margin-bottom: 5rem; }
+      .header_text-box .heading-primary-main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        /* animation-name:moveInLeft;
+            animation-timing-function: ease-out;
+            animation-duration: 3s; */
+        animation: moveInLeft 3s ease-out; }
+      .header_text-box .heading-primary-sub {
+        font-size: 2.5rem;
+        letter-spacing: 1.5rem;
+        display: block;
+        animation-name: moveInRight;
+        animation-duration: 3s;
+        animation-timing-function: ease-out; }
 
 @keyframes moveInLeft {
   0% {
