@@ -9,7 +9,7 @@
     margin: 0 auto;
     &--left {
       width: 40%;
-    //  margin-right: 2rem;
+     margin-right: 4rem;
     }
     &--right {
       width: 50%;
@@ -25,15 +25,15 @@
       }
       .nat-1{
         top: -1rem;
-     
+        left: -1rem;
       }
       .nat-2{
-        top: 5rem;
-        right:-7rem;
+        top: 3rem;
+        left: 24rem;
       }
       .nat-3{
         top: 12rem;
-        right: -.5rem;
+        left: 10rem;
       }
     }
   }
