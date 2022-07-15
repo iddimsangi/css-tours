@@ -1,5 +1,40 @@
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 30rem 0;
   margin-top: -20vh;
+  &-box {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    &--left {
+      width: 40%;
+    //  margin-right: 2rem;
+    }
+    &--right {
+      width: 50%;
+      // margin-left: 2rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .nat-1, 
+      .nat-2,
+      .nat-3{
+        position: absolute;
+      }
+      .nat-1{
+        top: -1rem;
+     
+      }
+      .nat-2{
+        top: 5rem;
+        right:-7rem;
+      }
+      .nat-3{
+        top: 12rem;
+        right: -.5rem;
+      }
+    }
+  }
 }
