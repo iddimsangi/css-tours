@@ -30,26 +30,34 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
+      .nat{
         width: 55%;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+        transition: all .2s;
+        outline-offset: 1rem;
+        &:hover{
+          transform: scale(1.25);
+          outline:1.5rem solid $color-medium-green;
+        }
+        &-1,
+        &-2,
+        &-3 {
+          position: absolute;
+        }
+        &-1 {
+          top: -1rem;
+          left: -1rem;
+        }
+        &-2 {
+          top: 3rem;
+          left: 24rem;
+        }
+        &-3 {
+          top: 12rem;
+          left: 10rem;
+        }
       }
-      .nat-1,
-      .nat-2,
-      .nat-3 {
-        position: absolute;
-      }
-      .nat-1 {
-        top: -1rem;
-        left: -1rem;
-      }
-      .nat-2 {
-        top: 3rem;
-        left: 24rem;
-      }
-      .nat-3 {
-        top: 12rem;
-        left: 10rem;
-      }
+     
     }
   }
 }
