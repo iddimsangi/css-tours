@@ -9,29 +9,44 @@
     margin: 0 auto;
     &--left {
       width: 40%;
-     margin-right: 4rem;
+      margin-right: 4rem;
+      div {
+        &:not(:last-of-type) {
+          margin-bottom: 3rem;
+        }
+        &:first-of-type {
+          background-color: #fff;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+      }
     }
     &--right {
       width: 50%;
-      // margin-left: 2rem;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      .nat-1, 
+      img{
+        width: 55%;
+      }
+      .nat-1,
       .nat-2,
-      .nat-3{
+      .nat-3 {
         position: absolute;
       }
-      .nat-1{
+      .nat-1 {
         top: -1rem;
         left: -1rem;
       }
-      .nat-2{
+      .nat-2 {
         top: 3rem;
         left: 24rem;
       }
-      .nat-3{
+      .nat-3 {
         top: 12rem;
         left: 10rem;
       }

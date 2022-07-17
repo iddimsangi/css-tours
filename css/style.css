@@ -90,6 +90,26 @@ body {
   animation: moveInTop 2s ease-out 0.75s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  border-bottom: 1px solid #28b485;
+  color: #28b485;
+  margin-top: 2rem;
+  transition: all .2s; }
+
+.btn-text:hover {
+  color: #fff;
+  background-color: #28b485;
+  transform: translateY(-0.4rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.btn-text:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -156,12 +176,22 @@ body {
     .section-about-box--left {
       width: 40%;
       margin-right: 4rem; }
+      .section-about-box--left div:not(:last-of-type) {
+        margin-bottom: 3rem; }
+      .section-about-box--left div:first-of-type {
+        background-color: #fff; }
+      .section-about-box--left div h3 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-bottom: 2rem; }
     .section-about-box--right {
       width: 50%;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center; }
+      .section-about-box--right img {
+        width: 55%; }
       .section-about-box--right .nat-1,
       .section-about-box--right .nat-2,
       .section-about-box--right .nat-3 {
