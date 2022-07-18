@@ -35,9 +35,14 @@
         box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
         transition: all .2s;
         outline-offset: 1rem;
+        z-index: 10;
         &:hover{
           transform: scale(1.25);
           outline:1.5rem solid $color-medium-green;
+          z-index: 20;
+          & :not(:hover){
+            transform: scale(.75);
+          }
         }
         &-1,
         &-2,

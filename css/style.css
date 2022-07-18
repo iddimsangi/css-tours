@@ -194,10 +194,14 @@ body {
         width: 55%;
         box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
         transition: all .2s;
-        outline-offset: 1rem; }
+        outline-offset: 1rem;
+        z-index: 10; }
         .section-about-box--right .nat:hover {
           transform: scale(1.25);
-          outline: 1.5rem solid #55c57a; }
+          outline: 1.5rem solid #55c57a;
+          z-index: 20; }
+          .section-about-box--right .nat:hover :not(:hover) {
+            transform: scale(0.75); }
         .section-about-box--right .nat-1, .section-about-box--right .nat-2, .section-about-box--right .nat-3 {
           position: absolute; }
         .section-about-box--right .nat-1 {
@@ -209,3 +213,17 @@ body {
         .section-about-box--right .nat-3 {
           top: 12rem;
           left: 10rem; }
+
+.section-feature {
+  padding: 30rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.801)), url(../../img/nat-4.jpg);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  .section-feature--box {
+    background-color: #fff;
+    width: 25%;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-right: 2rem; }

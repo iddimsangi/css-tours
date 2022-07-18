@@ -1,0 +1,21 @@
+.section-feature {
+  padding: 30rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.801)
+    ),
+    url(../../img/nat-4.jpg);
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  &--box{
+    background-color: #fff;
+    width: 25%;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-right: 2rem;
+  }
+}
