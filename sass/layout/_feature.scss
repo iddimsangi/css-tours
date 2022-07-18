@@ -13,10 +13,12 @@
 
   &-box {
     background-color: #fff;
-    width: 25%;
-    padding: 4rem 2rem;
+    width: 20%;
+    padding: 2rem 2rem;
     text-align: center;
-    margin-right: 2rem;
+    margin-right: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 2px;
     &--icon {
       font-size: 7rem;
       display: inline-block;
@@ -27,6 +29,10 @@
     h3 {
       text-transform: uppercase;
       margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1.5rem;
     }
   }
 }
