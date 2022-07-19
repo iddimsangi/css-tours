@@ -1,0 +1,28 @@
+.section-tours {
+  padding: 25rem 0;
+  .card-container {
+    &--card {
+      height: 50rem;
+      width: 30%;
+
+      color: $color-white;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      transition: all 0.5s;
+      &--side {
+        height: 50rem;
+        &--front{
+            background-color: red;
+        }
+        &--back{
+            background-color: green;
+            transform: rotateY(180deg);
+        }
+      }
+
+      &:hover {
+        transform: rotateY(-180deg);
+      }
+    }
+  }
+}
