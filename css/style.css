@@ -253,19 +253,32 @@ body {
 
 .section-tours {
   padding: 25rem 0; }
-  .section-tours .card-container--card {
-    height: 50rem;
-    width: 30%;
-    color: #fff;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    transition: all 0.5s; }
-    .section-tours .card-container--card--side {
-      height: 50rem; }
-      .section-tours .card-container--card--side--front {
-        background-color: red; }
-      .section-tours .card-container--card--side--back {
-        background-color: green;
-        transform: rotateY(180deg); }
-    .section-tours .card-container--card:hover {
-      transform: rotateY(-180deg); }
+  .section-tours .cards-container {
+    width: 100%; }
+    .section-tours .cards-container .card {
+      perspective: 150rem;
+      -moz-perspective: 150rem;
+      position: relative;
+      height: 52rem;
+      width: 25%; }
+      .section-tours .cards-container .card__side {
+        height: 52rem;
+        transition: all 0.8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+        .section-tours .cards-container .card__side--front {
+          background-color: red; }
+        .section-tours .cards-container .card__side--back {
+          background-color: green;
+          transform: rotateY(180deg); }
+      .section-tours .cards-container .card:hover .card__side--front {
+        transform: rotateY(-180deg); }
+      .section-tours .cards-container .card:hover .card__side--back {
+        transform: rotateY(0); }
