@@ -24,36 +24,31 @@
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         &--front {
-          background-color: red;
+          background-color: $color-white;
+          &--picture {
+            height: 23rem;
+            background-image: linear-gradient(
+                to right bottom,
+                $color-secondary-light,
+                $color-secondary-dark
+              ),
+              url(../../img/nat-5.jpg);
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: screen;
+           clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+          }
         }
 
         &--back {
-          background-color: green;
           transform: rotateY(180deg);
-
-          // &-1 {
-          //   background-image: linear-gradient(
-          //     to right bottom,
-          //     $color-secondary-light,
-          //     $color-secondary-dark
-          //   );
-          // }
-
-          // &-2 {
-          //   background-image: linear-gradient(
-          //     to right bottom,
-          //     $color-primary-light,
-          //     $color-primary-dark
-          //   );
-          // }
-
-          // &-3 {
-          //   background-image: linear-gradient(
-          //     to right bottom,
-          //     $color-tertiary-light,
-          //     $color-tertiary-dark
-          //   );
-          // }
+          &-1 {
+            background-image: linear-gradient(
+              to right bottom,
+              $color-secondary-light,
+              $color-secondary-dark
+            );
+          }
         }
       }
 

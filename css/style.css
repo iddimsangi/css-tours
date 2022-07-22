@@ -274,10 +274,18 @@ body {
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
         .section-tours .cards-container .card__side--front {
-          background-color: red; }
+          background-color: #fff; }
+          .section-tours .cards-container .card__side--front--picture {
+            height: 23rem;
+            background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg);
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: screen;
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
         .section-tours .cards-container .card__side--back {
-          background-color: green;
           transform: rotateY(180deg); }
+          .section-tours .cards-container .card__side--back-1 {
+            background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
       .section-tours .cards-container .card:hover .card__side--front {
         transform: rotateY(-180deg); }
       .section-tours .cards-container .card:hover .card__side--back {
