@@ -296,6 +296,18 @@ body {
               background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
             .section-tours .cards-container .card__side--front--heading--span {
               display: block; }
+          .section-tours .cards-container .card__side--front--list {
+            list-style: none;
+            font-size: 1.8rem;
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            width: 60%;
+            left: 20%; }
+            .section-tours .cards-container .card__side--front--list li {
+              padding: 1rem; }
+              .section-tours .cards-container .card__side--front--list li:not(:last-of-type) {
+                border-bottom: 1px solid #ccc; }
         .section-tours .cards-container .card__side--back {
           transform: rotateY(180deg); }
           .section-tours .cards-container .card__side--back-1 {

@@ -47,7 +47,7 @@
             top: 10rem;
             right: 1.5rem;
             color: $color-white;
-            padding:1rem;
+            padding: 1rem;
             &--1 {
               background-image: linear-gradient(
                 to right bottom,
@@ -55,8 +55,25 @@
                 $color-secondary-dark
               );
             }
-            &--span{
+            &--span {
               display: block;
+            }
+          }
+          &--list {
+            list-style: none;
+            font-size: 1.8rem;
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            width: 60%;
+           left: 20%;
+
+            li {
+              padding: 1rem;
+              &:not(:last-of-type) {
+                border-bottom: 1px solid #ccc;
+               
+              }
             }
           }
         }
