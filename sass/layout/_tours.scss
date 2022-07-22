@@ -25,6 +25,7 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         &--front {
           background-color: $color-white;
+          position: relative;
           &--picture {
             height: 23rem;
             background-image: linear-gradient(
@@ -36,7 +37,27 @@
             background-position: center;
             background-size: cover;
             background-blend-mode: screen;
-           clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+          }
+          &--heading {
+            text-transform: uppercase;
+            font-size: 2.5rem;
+            font-weight: 300;
+            position: absolute;
+            top: 10rem;
+            right: 1.5rem;
+            color: $color-white;
+            padding:1rem;
+            &--1 {
+              background-image: linear-gradient(
+                to right bottom,
+                $color-secondary-light,
+                $color-secondary-dark
+              );
+            }
+            &--span{
+              display: block;
+            }
           }
         }
 
