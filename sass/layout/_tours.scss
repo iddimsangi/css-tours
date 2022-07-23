@@ -25,7 +25,6 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         &--front {
           background-color: $color-white;
-          position: relative;
           &--picture {
             height: 23rem;
             background-image: linear-gradient(
@@ -37,27 +36,28 @@
             background-position: center;
             background-size: cover;
             background-blend-mode: screen;
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
           }
           &--heading {
             text-transform: uppercase;
             font-size: 2.5rem;
             font-weight: 300;
             position: absolute;
-            top: 10rem;
+            top: 13rem;
             right: 1.5rem;
             color: $color-white;
-            padding: 1rem;
-            &--1 {
+            width: 65%;
+            text-align: right;
+            // -webkit-box-decoration-break: clone;
+            &--span {
+              padding: 1rem 1.5rem;
               background-image: linear-gradient(
                 to right bottom,
                 $color-secondary-light,
                 $color-secondary-dark
               );
             }
-            &--span {
-              display: block;
-            }
+         
           }
           &--list {
             list-style: none;
@@ -71,7 +71,7 @@
             li {
               padding: 1rem;
               &:not(:last-of-type) {
-                border-bottom: 1px solid #ccc;
+                border-bottom: 1px solid #f1f1f2;
                
               }
             }
@@ -80,6 +80,9 @@
 
         &--back {
           transform: rotateY(180deg);
+          &-heading{
+
+          }
           &-1 {
             background-image: linear-gradient(
               to right bottom,
@@ -96,6 +99,7 @@
 
       &:hover .card__side--back {
         transform: rotateY(0);
+        
       }
     }
   }

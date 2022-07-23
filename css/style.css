@@ -274,28 +274,27 @@ body {
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
         .section-tours .cards-container .card__side--front {
-          background-color: #fff;
-          position: relative; }
+          background-color: #fff; }
           .section-tours .cards-container .card__side--front--picture {
             height: 23rem;
             background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg);
             background-position: center;
             background-size: cover;
             background-blend-mode: screen;
-            clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
           .section-tours .cards-container .card__side--front--heading {
             text-transform: uppercase;
             font-size: 2.5rem;
             font-weight: 300;
             position: absolute;
-            top: 10rem;
+            top: 13rem;
             right: 1.5rem;
             color: #fff;
-            padding: 1rem; }
-            .section-tours .cards-container .card__side--front--heading--1 {
-              background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+            width: 65%;
+            text-align: right; }
             .section-tours .cards-container .card__side--front--heading--span {
-              display: block; }
+              padding: 1rem 1.5rem;
+              background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
           .section-tours .cards-container .card__side--front--list {
             list-style: none;
             font-size: 1.8rem;
@@ -307,7 +306,7 @@ body {
             .section-tours .cards-container .card__side--front--list li {
               padding: 1rem; }
               .section-tours .cards-container .card__side--front--list li:not(:last-of-type) {
-                border-bottom: 1px solid #ccc; }
+                border-bottom: 1px solid #f1f1f2; }
         .section-tours .cards-container .card__side--back {
           transform: rotateY(180deg); }
           .section-tours .cards-container .card__side--back-1 {
