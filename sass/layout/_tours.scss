@@ -2,6 +2,10 @@
   padding: 25rem 0;
   .cards-container {
     // background-color: orange;
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+   display: flex;
     width: 100%;
     .card {
       // FUNCTIONALITY

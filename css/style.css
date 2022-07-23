@@ -86,6 +86,12 @@ body {
   .btn-white::after {
     background-color: #fff; }
 
+.btn-green {
+  background-color: #28b485;
+  color: #fff; }
+  .btn-green::after {
+    background-color: #28b485; }
+
 .btn-animated {
   animation: moveInTop 2s ease-out 0.75s;
   animation-fill-mode: backwards; }
@@ -254,6 +260,10 @@ body {
 .section-tours {
   padding: 25rem 0; }
   .section-tours .cards-container {
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+    display: flex;
     width: 100%; }
     .section-tours .cards-container .card {
       perspective: 150rem;
