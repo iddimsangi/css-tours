@@ -277,11 +277,16 @@ body {
           background-color: #fff; }
           .section-tours .cards-container .card__side--front--picture {
             height: 23rem;
-            background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg);
             background-position: center;
             background-size: cover;
             background-blend-mode: screen;
             clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+            .section-tours .cards-container .card__side--front--picture--1 {
+              background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg); }
+            .section-tours .cards-container .card__side--front--picture--2 {
+              background-image: linear-gradient(to right bottom, #55c57a, #28b485), url(../../img/nat-6.jpg); }
+            .section-tours .cards-container .card__side--front--picture--3 {
+              background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-7.jpg); }
           .section-tours .cards-container .card__side--front--heading {
             text-transform: uppercase;
             font-size: 2.5rem;
@@ -293,8 +298,13 @@ body {
             width: 65%;
             text-align: right; }
             .section-tours .cards-container .card__side--front--heading--span {
-              padding: 1rem 1.5rem;
-              background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+              padding: 1rem 1.5rem; }
+              .section-tours .cards-container .card__side--front--heading--span--1 {
+                background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+              .section-tours .cards-container .card__side--front--heading--span--2 {
+                background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+              .section-tours .cards-container .card__side--front--heading--span--3 {
+                background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
           .section-tours .cards-container .card__side--front--list {
             list-style: none;
             font-size: 1.8rem;
@@ -326,6 +336,10 @@ body {
               font-weight: 400; }
           .section-tours .cards-container .card__side--back-1 {
             background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+          .section-tours .cards-container .card__side--back-2 {
+            background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+          .section-tours .cards-container .card__side--back-3 {
+            background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
       .section-tours .cards-container .card:hover .card__side--front {
         transform: rotateY(-180deg); }
       .section-tours .cards-container .card:hover .card__side--back {
