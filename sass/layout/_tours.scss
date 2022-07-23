@@ -80,8 +80,23 @@
 
         &--back {
           transform: rotateY(180deg);
+          &--container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
           &-heading{
-
+            text-align: center;
+            color: $color-white;
+            margin-bottom: 15rem;
+            font-size: 8rem;
+            font-weight: 100;
+            span{
+              display: block;
+              font-size:2rem;
+              font-weight: 400;
+            }
           }
           &-1 {
             background-image: linear-gradient(
