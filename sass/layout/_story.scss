@@ -1,11 +1,13 @@
 .section-stories {
-  padding: 20rem 0;
+  padding: 10rem 0;
   .story {
     width: 70%;
     margin: 0 auto;
-    background-color: orange;
+    // background-color: orange;
     transform: skewX(-10deg);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 2rem;
+    transition: all 0.5s;
     &-shape {
       width: 16rem;
       height: 16rem;
@@ -16,13 +18,34 @@
       //   clip-path: circle(50% at 50% 50%);
       transform: translateX(-2rem) skewX(10deg);
       overflow: hidden;
+      position: relative;
       &--img {
         height: 100%;
         transform: scale(1.2) translateX(-2.5rem);
+        transition: all 0.5s;
+      }
+      &--caption {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 70%);
+        opacity: 0;
+        transition: all 0.5s;
       }
     }
     &-details {
       transform: skewX(10deg);
+    }
+    &:hover .story-shape--img {
+      transform: scale(1) translateX(-2.5rem);
+    }
+    &:hover .story-shape--caption {
+      transform: translate(-50%, -50%);
+      opacity: 1;
     }
   }
 }
