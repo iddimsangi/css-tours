@@ -356,10 +356,16 @@ body {
         transform: rotateY(0); }
 
 .section-stories {
-  padding: 10rem 0; }
+  padding: 10rem 0;
+  position: relative; }
+  .section-stories .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0; }
   .section-stories .story {
     width: 70%;
     margin: 0 auto;
+    background-color: #fff;
     margin-bottom: 10rem;
     transform: skewX(-10deg);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
