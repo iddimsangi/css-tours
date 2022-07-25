@@ -4,14 +4,16 @@
     width: 70%;
     margin: 0 auto;
     // background-color: orange;
+    margin-bottom: 10rem;
     transform: skewX(-10deg);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 2rem;
+    padding: 5rem;
     transition: all 0.5s;
     &-shape {
       width: 16rem;
       height: 16rem;
       background-color: green;
+      text-align: center;
       float: left;
       border-radius: 50%;
       -webkit-shape-outside: circle(50% at 50% 50%);
@@ -42,6 +44,7 @@
     }
     &:hover .story-shape--img {
       transform: scale(1) translateX(-2.5rem);
+      filter: blur(.4rem);
     }
     &:hover .story-shape--caption {
       transform: translate(-50%, -50%);
