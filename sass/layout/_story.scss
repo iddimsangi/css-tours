@@ -1,0 +1,28 @@
+.section-stories {
+  padding: 20rem 0;
+  .story {
+    width: 70%;
+    margin: 0 auto;
+    background-color: orange;
+    transform: skewX(-10deg);
+    padding: 2rem;
+    &-shape {
+      width: 16rem;
+      height: 16rem;
+      background-color: green;
+      float: left;
+      border-radius: 50%;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      //   clip-path: circle(50% at 50% 50%);
+      transform: translateX(-2rem) skewX(10deg);
+      overflow: hidden;
+      &--img {
+        height: 100%;
+        transform: scale(1.2) translateX(-2.5rem);
+      }
+    }
+    &-details {
+      transform: skewX(10deg);
+    }
+  }
+}

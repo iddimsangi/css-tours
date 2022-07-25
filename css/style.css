@@ -354,3 +354,26 @@ body {
         transform: rotateY(-180deg); }
       .section-tours .cards-container .card:hover .card__side--back {
         transform: rotateY(0); }
+
+.section-stories {
+  padding: 20rem 0; }
+  .section-stories .story {
+    width: 70%;
+    margin: 0 auto;
+    background-color: orange;
+    transform: skewX(-10deg);
+    padding: 2rem; }
+    .section-stories .story-shape {
+      width: 16rem;
+      height: 16rem;
+      background-color: green;
+      float: left;
+      border-radius: 50%;
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      transform: translateX(-2rem) skewX(10deg);
+      overflow: hidden; }
+      .section-stories .story-shape--img {
+        height: 100%;
+        transform: scale(1.2) translateX(-2.5rem); }
+    .section-stories .story-details {
+      transform: skewX(10deg); }
