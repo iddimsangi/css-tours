@@ -430,12 +430,14 @@ body {
       padding: 6rem; }
       .section-booking__container .booking_form-group {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        margin-bottom: 3rem; }
         .section-booking__container .booking_form-group--input {
           padding: 1.5rem 1rem;
           font-size: 1.6rem;
+          margin-bottom: 1rem;
           border: none; }
           .section-booking__container .booking_form-group--input:focus {
             outline: none; }
         .section-booking__container .booking_form-group label {
-          margin-bottom: 3rem; }
+          margin-left: 1rem; }
