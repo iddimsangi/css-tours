@@ -415,3 +415,13 @@ body {
     .section-stories .story:hover .story-shape--caption {
       transform: translate(-50%, -50%);
       opacity: 1; }
+
+.section-booking {
+  padding: 15rem 10rem;
+  background-image: linear-gradient(#55c57a, #28b485); }
+  .section-booking__container {
+    margin: 0 auto;
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../img/nat-10.jpg);
+    height: 52rem;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
