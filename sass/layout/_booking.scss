@@ -12,5 +12,24 @@
     height: 52rem;
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .booking_form {
+      width: 50%;
+      padding: 6rem;
+      &-group{
+        display: flex;
+        flex-direction: column;
+        &--input{
+          padding: 1.5rem 1rem;
+          font-size: 1.6rem;
+          border: none;
+          &:focus{
+            outline: none;
+          }
+        }
+        label{
+          margin-bottom: 3rem;
+        }
+      }
+    }
   }
 }

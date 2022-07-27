@@ -425,3 +425,17 @@ body {
     height: 52rem;
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+    .section-booking__container .booking_form {
+      width: 50%;
+      padding: 6rem; }
+      .section-booking__container .booking_form-group {
+        display: flex;
+        flex-direction: column; }
+        .section-booking__container .booking_form-group--input {
+          padding: 1.5rem 1rem;
+          font-size: 1.6rem;
+          border: none; }
+          .section-booking__container .booking_form-group--input:focus {
+            outline: none; }
+        .section-booking__container .booking_form-group label {
+          margin-bottom: 3rem; }
