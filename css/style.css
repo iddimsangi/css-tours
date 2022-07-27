@@ -415,3 +415,6 @@ body {
     .section-stories .story:hover .story-shape--caption {
       transform: translate(-50%, -50%);
       opacity: 1; }
+
+.section-booking {
+  padding: 20rem; }
