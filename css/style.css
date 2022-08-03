@@ -430,14 +430,30 @@ body {
       padding: 6rem; }
       .section-booking__container .booking_form-group {
         display: flex;
-        flex-direction: column;
-        margin-bottom: 3rem; }
+        flex-direction: column; }
+        .section-booking__container .booking_form-group:not(:last-child) {
+          margin-bottom: 3rem; }
         .section-booking__container .booking_form-group--input {
           padding: 1.5rem 1rem;
           font-size: 1.6rem;
-          margin-bottom: 1rem;
-          border: none; }
+          border-bottom: 0.3rem solid transparent;
+          transition: all 0.3s;
+          display: block;
+          border: none;
+          transition: all .4s; }
           .section-booking__container .booking_form-group--input:focus {
-            outline: none; }
+            outline: none;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+            border-bottom: 0.3rem solid #28b485; }
+            .section-booking__container .booking_form-group--input:focus:invalid {
+              border-bottom: 0.3rem solid orangered; }
+          .section-booking__container .booking_form-group--input::-webkit-input-placeholder {
+            color: #777; }
         .section-booking__container .booking_form-group label {
-          margin-left: 1rem; }
+          margin-left: 1rem;
+          font-size: inherit;
+          opacity: 1; }
+        .section-booking__container .booking_form-group--input:placeholder-shown + label {
+          opacity: 0;
+          transform: translateY(-4rem);
+          visibility: hidden; }
