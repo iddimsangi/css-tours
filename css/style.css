@@ -429,6 +429,8 @@ body {
     background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../img/nat-10.jpg);
     height: 52rem;
     background-size: cover;
+    background-position: center;
+    width: 80%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
     .section-booking__container .booking_form {
       width: 50%;
@@ -498,3 +500,14 @@ body {
               display: none; }
             .section-booking__container .booking_form-group .radio_section .radio__group .input__radio:checked ~ label .custom-radio::after {
               opacity: 1; }
+
+.footer {
+  padding: 20rem 10rem;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer-contents {
+    display: flex;
+    justify-content: space-between; }
